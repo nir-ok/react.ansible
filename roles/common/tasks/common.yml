@@ -1,0 +1,10 @@
+---
+
+- name: install libselinux-python
+  yum: name=libselinux-python state=latest
+
+- name: backup localtime
+  copy: src=/etc/localtime dest=/etc/localtime.org force=no
+
+- name: change timezone
+  copy: src=/usr/share/zoneinfo/Asia/Tokyo dest=/etc/localtime

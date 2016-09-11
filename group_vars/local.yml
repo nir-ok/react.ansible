@@ -1,0 +1,5 @@
+ip_address     : "{{ansible_eth1.ipv4.address}}"
+jenkins_user   : "vagrant"
+jenkins_path   : "vagrant"
+project_path   : "/vagrant/"
+repository_name: ""

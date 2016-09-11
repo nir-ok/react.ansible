@@ -1,0 +1,4 @@
+---
+
+- name: install java-8-devel
+  yum: name=java-1.8.0-openjdk-devel state=latest

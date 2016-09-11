@@ -1,0 +1,12 @@
+---
+
+- hosts: host
+  sudo: true
+  vars_files:
+    - group_vars/{{stage}}.yml
+  roles:
+    - common
+    - java
+    - node
+    - npm
+#    - jenkins

@@ -1,0 +1,7 @@
+[host]
+127.0.0.1
+
+[all:vars]
+stage=local
+ansible_ssh_user=root
+ansible_ssh_path=vagrant

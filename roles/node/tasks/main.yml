@@ -1,0 +1,7 @@
+---
+
+- name: rpm -Unh nodesource-release-el6-1
+  yum: name=https://rpm.nodesource.com/pub_4.x/el/6/x86_64/nodnodesource-release-el6-1.noarch.rpm state=present
+
+- name: install nodejs
+  yum: name=nodejs state=latest

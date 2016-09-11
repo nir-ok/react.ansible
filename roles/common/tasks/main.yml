@@ -1,0 +1,5 @@
+---
+
+- include: common.yml
+- include: firewall.yml
+- include: command.yml

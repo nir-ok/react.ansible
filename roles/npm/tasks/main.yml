@@ -1,0 +1,13 @@
+---
+
+- name: update npm
+  npm: name=npm global=yes state=latest
+
+- name: install npm global
+  npm : name={{item}} global=yes
+  with_items:
+      - eslint
+      - webpack
+      - webpack-dev-server
+      - n
+      - mocha

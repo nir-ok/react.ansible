@@ -1,0 +1,8 @@
+---
+
+- hosts: host
+  sudo: true
+  vars_files:
+    - group_vars/{{stage}}.yml
+  roles:
+    - jenkins_plugin
